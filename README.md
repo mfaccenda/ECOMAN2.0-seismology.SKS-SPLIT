@@ -3,21 +3,24 @@ SKS-SPLIT estimates the SKS splitting at a grid of virtual seismic stations plac
 
 # COMPILAION
 
-• Untar fstrack.tar.gz: tar -zxvf fstrack.tar.gz
-• Execute the Makefile in fstrack/single_layer1: make
-• Execute the Makefile in fstrack/multi_layer: make
-• copy the binary file anicake from /fstrack/bin directory to the SKS-SPLIT
-directory containing the bash file pbs_sks. Directory /fstrack can be now
-deleted, if wanted.
-• Execute ./bash_compile in SKS-SPLIT
+Untar fstrack.tar.gz: tar -zxvf fstrack.tar.gz
+
+Execute the Makefile in fstrack/single_layer1: make
+
+Execute the Makefile in fstrack/multi_layer: make
+
+Copy the binary file anicake from /fstrack/bin directory to the SKS-SPLIT directory containing the bash file pbs_sks. Directory /fstrack can be now deleted, if wanted.
+
+Execute ./bash_compile in SKS-SPLIT
+
+Depending on the Intel Fortran Compiler and environment settings, F77=ifort, F90=ifort, CC=icc must be added to each of the two Makefile. This is done in the FSTRACK version present in this package
 
 # RUN 
-submit the pbs_sks bash file which consecutively runs:
+
+Submit the pbs_sks bash file which consecutively runs:
+
 ./stack_calc args (generates a stack of horizontal layers with different elastic
 tensors)
+
 mpiexec -np nprocs ./split_calc args (computes splitting paramters aver-
 aged over back-azimuth)
-1Depending on the Intel Fortran Compiler and environment settings, you need to add
-F77=ifort,F90=ifort,CC=icc to each of the two Makefile. This is done in the FSTRACK version
-present in this package
-55
