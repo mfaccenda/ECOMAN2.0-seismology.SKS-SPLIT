@@ -1,7 +1,7 @@
 # SKS-SPLIT
 SKS-SPLIT estimates the SKS splitting at a grid of virtual seismic stations placed at the top of the D-REX_M model as a function of the back-azimuth using the Fortran routines included in FSTRACK (Schulte-Pelkum and Blackmann, 2003; Becker et al., 2006). The routines have been adapted to load the D-REX_M output, stack the elastic tensors and densities in an upper mantle rock column beneath each virtual seismic station (Faccenda and Capitanio, 2013), and run in parallel using MPI.
 
-# COMPILAION
+# COMPILATION
 
 Untar fstrack.tar.gz: tar -zxvf fstrack.tar.gz
 
@@ -24,3 +24,6 @@ tensors)
 
 mpiexec -np nprocs ./split_calc args (computes splitting paramters aver-
 aged over back-azimuth)
+
+
+See the ECOMAN manual for more information
