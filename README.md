@@ -26,4 +26,5 @@ mpiexec -np nprocs ./split_calc args (computes splitting paramters aver-
 aged over back-azimuth)
 
 
-See the ECOMAN manual for more information
+More detailed information and instructions are provided in the user [manual](https://newtonproject.geoscienze.unipd.it/wp-content/uploads/2021/04/ECOMAN1.0_manual.pdf). 
+
