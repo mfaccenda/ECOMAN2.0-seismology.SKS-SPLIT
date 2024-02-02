@@ -1,0 +1,18 @@
+# CHANGELOG.md			
+LICENSE				
+README.md			
+bash_compile			
+fazi2splitstat.f90		
+fstrack.tar.gz			
+pbs_sks				
+produce_splitting_layersU.awk	
+sav2cijkl.f90			
+savstack.f90
+split_calc
+stack_calc
+stack_input.dat
+RUN				
+viz
+
+.DS_store
+.DS_store?
